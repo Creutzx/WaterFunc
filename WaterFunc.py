@@ -14,7 +14,7 @@ def waterfunc(lyr_name):
     str_mxd_save_post = r".mxd"
     lyr_save_pre = r"UY_"
     lyr_save_post = r".lyr"
-    lyr_name = self.lyr_name
+
 
     mxd = arcpy.mapping.MapDocument(str_dir_main + "\\" + str_mxd_blank)
     df = arcpy.mapping.ListDataFrames(mxd, str_df_cur)[0]
@@ -27,4 +27,6 @@ def waterfunc(lyr_name):
 
     del addlayer, df, mxd
 
-waterfunc(lyr_name = Geo)
+waterfunc(lyr_name = "Geo")
+waterfunc(lyr_name = "Elev")
+waterfunc(lyr_name = "Precip")
