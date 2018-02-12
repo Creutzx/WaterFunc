@@ -29,8 +29,10 @@ def waterfunc(lyr_name):
 Abbreviation            Attribute
 Geo                     Geology
 Elev                    Elevation
-Precip                  Precipitation"""
+Precip                  Precipitation
+LndCvr                  Land Cover"""
 
 waterfunc(lyr_name = "Geo")
 waterfunc(lyr_name = "Elev")
 waterfunc(lyr_name = "Precip")
+waterfunc(lyr_name = "LndCvr")
